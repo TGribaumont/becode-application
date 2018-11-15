@@ -1,0 +1,1091 @@
+/*
+Author: Tibault Gribaumont
+Version: 1.1
+Last update: 13th April 2018
+*/
+
+
+/*
+Table of Contents
+
+1.0 Reset
+2.0 Elements
+    2.1 General
+3.0 Header
+    3.1 General
+    3.2 Nav
+4.0 Content
+    4.1 General
+    4.2 The Dream
+    4.3 My Partner
+    4.4 My Tools
+    4.5 My Needs
+    4.6 My Desires
+    4.7 The Future
+    4.8 My Life
+    4.9 Contact
+5.0 Footer
+6.0 Responsive
+    6.1 Max 1150
+    6.2 Max 840
+    6.3 Max 570
+*/
+
+
+/*
+
+*  1.0 Reset
+
+*  http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+
+*  2.0 Elements
+
+*/
+
+/* 2.1 General */
+
+html {
+    font-family: 'Ubuntu';
+    font-weight: 400;
+}
+
+body {
+    background-color: #f2f9ff;
+    color: #042240;
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans';
+    font-weight: 700;
+    margin: 0;
+}
+
+h2 {
+    font-family: 'Black Han Sans';
+    font-weight: 400;
+    font-size: 5em;
+    position: relative;
+    bottom: 6px;
+}
+
+h3 {
+    font-size: 1.3em;
+    margin-bottom: 15px;
+    clear: both;
+}
+
+p {
+    line-height: 1.3em;
+    font-size: 1.1em;
+}
+
+a {
+    text-decoration: none;
+    color: #f2f9ff;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.warning {
+    font-size: 1.5em;
+    font-weight: 700;
+    text-align: center;
+}
+
+.warning span {
+    color: #0b131b;
+    font-size: 1.5em;
+}
+
+/*
+
+*  3.0 Header
+
+*/
+
+/* 3.1 General */
+
+#mobileNavButton {
+    display: none;
+}
+
+/* 3.2 Nav */
+
+header nav {
+    position: fixed;
+    top: 0;
+    background-color: #000;
+    width: 100%;
+    height: 144px;
+    opacity: 0.8;
+    text-align: center;
+    z-index: 5;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.5em;
+}
+
+header nav ul li a {
+    color: #f2f9ff;
+    display: inline-block;
+}
+
+/*    header #mainNav ul li a {
+        display: inline-block;
+    }*/
+    
+header nav ul li a:before {
+    display: block;
+    content: "";
+    margin: 10px auto;
+    height: 80px;
+    width: 80px;
+}
+
+header nav ul li #mainNavDream:before {
+    background: url(../images/icon_cloud2.png) no-repeat;
+    background-size: contain;
+}
+
+header nav ul li #mainNavPartner:before {
+    background: url(../images/icon_partner2.png) no-repeat;
+    background-size: contain;
+}
+
+header nav ul li #mainNavTools:before {
+    background: url(../images/icon_puzzle.png) no-repeat;
+    background-size: contain;
+}
+
+header nav ul li #mainNavNeeds:before {
+    background: url(../images/icon_target.png) no-repeat;
+    background-size: contain;
+}
+
+header nav ul li #mainNavDesires:before {
+    background: url(../images/icon_heart.png) no-repeat;
+    background-size: contain;
+}
+
+header nav ul li #mainNavFuture:before {
+    background: url(../images/icon_clock.png) no-repeat;
+    background-size: contain;
+}
+
+header nav ul li #mainNavLife:before {
+    background: url(../images/icon_info.png) no-repeat;
+    background-size: contain;
+}
+
+header nav ul li #mainNavContact:before {
+    background: url(../images/icon_contact.png) no-repeat;
+    background-size: contain;
+}
+
+/*
+
+*  4.0 Content
+
+*/
+
+/* 4.1 General */
+
+.section:nth-child(even) {
+    background-color: #4474a3;
+    color: #0b131b;
+}
+
+.section:nth-child(odd) {
+    z-index: 5;
+}
+
+.section:nth-child(odd) a {
+    color: #4474a3;
+}
+
+.sectionTitle {
+    text-transform: uppercase;
+}
+
+.sectionContent {
+    clear: both;
+}
+
+.section:nth-child(even) .sectionTitle {
+    padding-left: 100px;
+    color: #f2f9ff;
+}
+
+.section:nth-child(odd) .sectionTitle {
+    float: right;
+    padding-right: 100px;
+    color: #4474a3;
+}
+
+.sectionContent {
+    padding: 20px 100px 80px;
+}
+
+/* 4.2 My Dream */
+
+#myDream {
+    padding-top: 144px;
+}
+
+#myDream .sectionContent {
+    padding-top: 40px;
+}
+
+#myDream p {
+    text-align: center;
+    font-size: 2em;
+}
+
+#myDream p span {
+    font-weight: 700;
+    color: #0b131b;
+}
+
+#myDream ul {
+    margin-top: 30px;
+}
+
+#myDream ul li {
+    display: block;
+    float: left;
+    width: calc(25% - 30px);
+    height: 100%;
+    padding: 15px;
+}
+
+#myDream ul li img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#myDream ul li p {
+    line-height: 1.2em;
+    text-align: left;
+    font-size: 1.2em;
+}
+
+/* 4.3 My Partner */
+
+#myPartner #partnerTitle {
+    position: relative;
+    top: -144px;
+}
+
+#myPartner #partnerLink {
+    display: inline-block;
+    clear: both;
+    float: left;
+}
+
+#myPartner img {
+    width: 250px;
+    margin-top: 30px;
+}
+
+#myPartner .sectionContent {
+    display: inline-block;
+    width: calc(100% - 400px);
+    padding: 20px 100px 80px 50px;
+}
+
+#myPartner h3 {
+    float: left;
+}
+
+#myPartner p {
+    margin-bottom: 30px;
+    float: left;
+}
+
+#myPartner p:last-child {
+    margin-bottom: 0;
+}
+
+/* 4.4 My Tools */
+
+#myTools #toolsTitle {
+    position: relative;
+    top: -144px;
+}
+
+#myTools h3 {
+    margin-top: 15px;
+}
+
+#myTools h3:first-child {
+    margin-top: 0;
+}
+
+/* 4.5 My Needs */
+
+#myNeeds #needsTitle {
+    position: relative;
+    top: -144px;
+}
+
+#myNeeds .logoGallery {
+    text-align: center;
+}
+
+#myNeeds .logoGallery:first-child {
+    margin-bottom: 30px;
+}
+
+#myNeeds .logoGallery:last-child {
+    margin-top: 30px;
+}
+
+#myNeeds .logoGallery img {
+    display: inline-block;
+    height: 80px;
+}
+
+#myNeeds p {
+    margin-bottom: 15px;
+}
+
+#myNeeds p:last-child {
+    margin-bottom: 0;
+}
+
+/* 4.6 My Desires */
+
+#myDesires {
+}
+
+#myDesires #desiresTitle {
+    position: relative;
+    top: -144px;
+}
+
+#myDesires .sectionContent p {
+    width: 66%;
+    float: left;
+    margin-bottom: 15px;
+}
+
+#myDesires .sectionContent p:last-child {
+    margin-bottom: 0;
+}
+
+#myDesires .sectionContent img {
+    width: 33%;
+    float: right;
+}
+
+/* 4.7 The Future */
+
+#theFuture #futureTitle {
+    position: relative;
+    top: -144px;
+}
+
+#theFuture ul li {
+    margin-bottom: 50px;
+}
+
+#theFuture ul li:first-child {
+    padding-right: 240px;
+}
+
+#theFuture ul li:nth-child(2) {
+    padding-left: 80px;
+    padding-right: 160px;
+}
+
+#theFuture ul li:nth-child(3) {
+    padding-left: 160px;
+    padding-right: 80px;
+}
+
+#theFuture ul li:nth-child(4) {
+    padding-left: 240px;
+    margin-bottom: 0;
+}
+
+#theFuture ul li h4 {
+    margin-bottom: 15px;
+}
+
+/* 4.8 My Life */
+
+#myLife #lifeTitle {
+    position: relative;
+    top: -144px;
+}
+
+#myLife .sectionContent div:nth-child(even) {
+    padding-left: 150px;
+}
+
+#myLife .sectionContent div:nth-child(odd) {
+    padding-right: 150px;
+}
+
+#myLife .sectionContent p {
+    margin-bottom: 30px;
+}
+
+#myLife .sectionContent div:last-child p:last-child {
+    margin-bottom: 0;
+}
+
+/* 4.9 My Contact */
+
+#contact #contactTitle {
+    position: relative;
+    top: -144px;
+}
+
+#contact a {
+    color: #042240;
+}
+
+#contact .warning {
+    margin-top: 50px;
+}
+
+#contact ul li {
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+}
+
+#contact ul #contactEmail a:before {
+    display: block;
+    content: "";
+    background: url(../images/icon_@.png) no-repeat;
+    background-size: contain;
+    margin: 10px auto 20px;
+    height: 80px;
+    width: 80px;
+}
+
+#contact ul #contactPhone:before {
+    display: block;
+    content: "";
+    background: url(../images/icon_phone.png) no-repeat;
+    background-size: contain;
+    margin: 10px auto 20px;
+    height: 80px;
+    width: 80px;
+}
+
+#contact ul #contactLinkedin a {
+    height: 100%;
+    display: inline-block;
+}
+
+#contact ul #contactLinkedin a:before {
+    display: block;
+    content: "";
+    background: url(../images/linkedin_logo.png) no-repeat;
+    background-size: contain;
+    height: 80px;
+    width: 200px;
+    margin: 20px auto 10px;
+}
+
+/*
+
+*  5.0 Footer
+
+*/
+
+#mainFooter {
+    background-color: #4474a3;
+    height: 50px;
+    margin: 0 100px;
+}
+
+#copyright,
+#developer {
+    width: 35%;
+    display: block;
+    float: left;
+    padding: 15px 0;
+}
+
+#copyright {
+    margin-left: 15%;
+}
+
+#developer {
+    text-align: right;
+    margin-right: 15%;
+}
+
+#mainFooter #img {
+    width: 20px;
+}
+
+/*
+
+*  6.0 Responsive
+
+*/
+
+/* 6.1 Max 1150 */
+
+@media only screen and (max-width: 1150px) {
+    
+    /* Elements */
+    
+    h2 {
+        font-size: 4em;
+    }
+    
+    /* Header */
+    
+    header nav {
+        height: 109px;
+    }
+    
+    header nav ul li {
+        font-size: 1.2em;
+        padding: 10px;
+    }
+    
+    header nav ul li a:before {
+        height: 50px;
+        width: 50px;
+    }
+    
+    /* Content */
+    
+    /* General */
+    
+    .sectionContent {
+        padding: 10px 20px 30px;
+    }
+    
+    /* My Dream */
+    
+    #myDream {
+        padding-top: 109px;
+    }
+    
+    #myDream .sectionContent {
+        padding-top: 10px; 
+    }
+
+    #myDream p {
+        font-size: 1.5em;
+    }
+    
+    #myDream ul {
+        margin-top: 0;
+    }
+    
+    #myDream ul li {
+        width: calc(25% - 20px);
+        padding: 10px;
+    }
+    
+    #myDream h3 {
+        font-size: 1em;
+    }
+    
+    /* My Partner */
+    
+    #myPartner #partnerTitle {
+        top: -109px;
+    }
+    
+    #myPartner .sectionContent {
+        padding-bottom: 20px;
+    }
+
+    /* My Tools */
+    
+    #myTools #toolsTitle {
+        top: -109px;
+    }
+
+    /* My Needs */
+    
+    #myNeeds #needsTitle {
+        top: -109px;
+    }
+
+    /* My Desires */
+    
+    #myDesires #desiresTitle {
+        top: -109px;
+    }
+
+    /* The Future */
+    
+    #theFuture #futureTitle {
+        top: -109px;
+    }
+
+    /* My Life */
+    
+    #myLife #lifeTitle {
+        top: -109px;
+    }
+
+    /* Contact */
+    
+    #contact #contactTitle {
+        top: -109px;
+    }
+    
+    #contact ul #contactEmail a:before,
+    #contact ul #contactPhone:before ,
+    #contact ul #contactLinkedin a:before {
+        height: 60px;
+        width: 60px;
+    }
+    
+    #contact ul #contactLinkedin a:before {
+        width: 120px;
+    }
+    
+    /* Footer */
+    
+    #mainFooter {
+        margin: 0;
+    }
+    
+    #copyright,
+    #developer {
+        width: 45%;
+    }
+    
+    #copyright {
+        margin-left: 5%;
+    }
+
+    #developer {
+        margin-right: 5%;
+    }
+
+}
+
+/* 6.2 Max 840 */
+
+@media only screen and (max-width: 840px) {
+    
+    /* My Partner */
+    
+    #myPartner img {
+        width: 150px;
+    }
+    
+    #myPartner .sectionContent {
+        width: calc(100% - 250px);
+        padding: 20px 50px 80px 50px;
+    }
+    
+    /* Contact */
+    
+    #contact ul li {
+        width: 32.5%;
+    }
+    
+/*}
+
+@media only screen and (max-width: 785px) {*/
+    
+    /* Header */
+    
+    #mobileNavButton {
+        display: block;
+        width: 100%;
+        text-align: center;
+        height: 60px;
+        position: fixed;
+        top: 0;
+        background-color: #000;
+        opacity: 0.8;
+        z-index: 10;
+    }
+    
+    #mobileNavButton img {
+        height: 40px;
+        margin: 10px auto;
+    }
+    
+    header #mainNav {
+        display: none;
+        position: fixed;
+        top: 60px;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        height: 100%;
+        text-align: center;
+        overflow: hidden;
+    }
+    
+    header #mainNav.active {
+        display: block;
+    }
+    
+    header #mainNav ul {
+        padding: 0 15%;
+    }
+    
+    header #mainNav ul li {
+        display: inline-block;
+        padding: 0 0 20px;
+        width: 24%;
+    }
+    
+    /* Content */
+    
+    /* General */
+    
+    .section:nth-child(even) .sectionTitle {
+        padding-left: 50px;
+    }
+
+    .section:nth-child(odd) .sectionTitle {
+        padding-right: 50px;
+    }
+
+    /* My Dream */
+    
+    #myDream {
+        padding-top: 60px;
+    }
+    
+    #myDream ul li {
+        width: calc(50% - 40px);
+        padding: 20px;
+    }
+    
+    #myDream ul li:nth-child(3) {
+        clear: both;
+        float: left;
+    }
+    
+    #myDream ul li:nth-child(3),
+    #myDream ul li:nth-child(4) {
+        padding-bottom: 0;
+    }
+    
+    /* My Partner */
+    
+    #myPartner #partnerTitle {
+        top: -60px;
+    }
+    
+    #myPartner .sectionContent {
+        padding-bottom: 30px;
+    }
+    
+    /* My Tools */
+    
+    #myTools #toolsTitle {
+        top: -60px;
+    }
+
+    /* My Needs */
+    
+    #myNeeds #needsTitle {
+        top: -60px;
+    }
+    
+    #myNeeds .logoGallery:first-child {
+        margin-bottom: 20px;
+    }
+    
+    #myNeeds .logoGallery:last-child {
+        margin-top: 20px;
+    }
+    
+    #myNeeds .logoGallery img {
+        height: 40px;
+        margin: 0 10px;
+    }
+
+    /* My Desires */
+    
+    #myDesires #desiresTitle {
+        top: -60px;
+    }
+
+    /* The Future */
+    
+    #theFuture #futureTitle {
+        top: -60px;
+    }
+
+    #theFuture ul li {
+        margin-bottom: 30px;
+    }
+
+    #theFuture ul li:first-child {
+        padding-right: 150px;
+    }
+
+    #theFuture ul li:nth-child(2) {
+        padding-left: 50px;
+        padding-right: 100px;
+    }
+
+    #theFuture ul li:nth-child(3) {
+        padding-left: 100px;
+        padding-right: 50px;
+    }
+
+    #theFuture ul li:nth-child(4) {
+        padding-left: 150px;
+        margin-bottom: 0;
+    }
+
+    /* My Life */
+    
+    #myLife #lifeTitle {
+        top: -60px;
+    }
+
+    #myLife .sectionContent div:nth-child(even) {
+        padding-left: 100px;
+    }
+
+    #myLife .sectionContent div:nth-child(odd) {
+        padding-right: 100px;
+    }
+
+    /* Contact */
+    
+    #contact #contactTitle {
+        top: -60px;
+    }
+    
+    #contact a {
+        display: inline-block;
+    }
+    
+    .warning span {
+        display: block;
+    }
+    
+    /* Footer */
+    
+    #mainFooter {
+        height: auto;
+    }
+    
+    #copyright,
+    #developer {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        clear: both;
+        float: none;
+    }
+
+    #copyright {
+        /*margin-left: 15%;*/
+        padding-bottom: 0;
+    }
+
+    #developer {
+/*        text-align: right;
+        margin-right: 15%;*/
+    }
+
+}
+
+/* 6.3 Max 570 */
+
+@media only screen and (max-width: 570px) {
+    
+    /* Elements */
+    
+    h2 {
+        font-size: 2.5em;
+    }
+    
+    /* Header */
+    
+    header #mainNav ul {
+        /*padding: 0 25%;*/
+    }
+    
+    header #mainNav ul li {
+        padding: 5px 0;
+        width: 49%;
+    }
+    
+    header #mainNav ul li a:before {
+        height: 30px;
+        width: 30px;
+    }
+    
+    /* Content */
+    
+    /* General */
+    
+    .section:nth-child(even) .sectionTitle {
+        padding-left: 10px;
+    }
+
+    .section:nth-child(odd) .sectionTitle {
+        padding-right: 10px;
+    }
+
+    /* My Dream */
+    
+    #myDream {
+        padding-top: 63px;
+    }
+    
+    #myDream .sectionContent {
+        padding: 10px 0 30px;
+    }
+    
+    #myDream ul li {
+        width: calc(100% - 40px);
+        padding: 20px;
+    }
+    
+    #myDream ul li img {
+        width: 50%;
+        display: block;
+        margin: 0 auto 20px;
+    }
+    
+    /* My Partner */
+    
+    #myPartner #partnerLink {
+        float: none;
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+    }
+    
+    #myPartner #partnerLink img {
+        margin-top: 0;
+    }
+    
+    #myPartner .sectionContent {
+        width: calc(100% - 60px);
+        padding: 10px 20px 30px;
+    }
+    
+    /* My Needs */
+    
+    #myNeeds .logoGallery img {
+        height: 30px;
+    }
+    
+    /* My Desires */
+    
+    #myDesires .sectionContent img {
+        float: none;
+        display: block;
+        margin: 0 auto 20px;
+    }
+    
+    #myDesires .sectionContent p {
+        clear: both;
+        width: 100%;
+    }
+    
+    /* The Future */
+    
+    #theFuture ul li:first-child,
+    #theFuture ul li:nth-child(2),
+    #theFuture ul li:nth-child(3),
+    #theFuture ul li:nth-child(4) {
+        padding: 0;
+    }
+    
+    /* My Life */
+
+    #myLife .sectionContent div:nth-child(even),
+    #myLife .sectionContent div:nth-child(odd) {
+        padding: 0;
+    }
+    
+    /* Contact */
+    
+    #contact ul li {
+        width: 100%;
+    }
+    
+    #contact ul #contactPhone:before {
+        margin: 20px auto;
+    }
+    
+    #contact ul #contactLinkedin {
+        margin: 30px auto 10px;
+    }
+    
+    #contact ul #contactLinkedin a:before {
+        margin: 0;
+    }
+    
+    #contact .warning {
+        font-size: 1.2em;
+        margin-top: 0;
+    }
+
+}
